@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Luxury checkout for Kay’s Lumière." />
+    <title>Checkout | Kay’s Lumière</title>
+    <link rel="icon" href="assets/images/logo.jpg" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container nav-inner" aria-label="Primary navigation">
+        <a class="logo" href="index.html">
+          <img src="assets/images/logo.jpg" alt="Kay’s Lumière logo" />
+          <span>Kay’s Lumière</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="about.html">About</a>
+          <a href="collections.html">Collections</a>
+          <a href="shop.html">Shop</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-cta">
+          <a href="cart.html" aria-label="Cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg> <span class="cart-count" data-cart-count>0</span>
+          </a>
+          <a class="btn btn-gold" href="shop.html">Shop Now</a>
+          <button class="nav-toggle" type="button" data-nav-toggle aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="nav-overlay" data-nav-overlay aria-hidden="true"></div>
+    <aside class="nav-drawer" data-nav-drawer aria-hidden="true">
+      <div class="nav-drawer-header">
+        <a class="logo" href="index.html">
+          <img src="assets/images/logo.jpg" alt="Kay’s Lumière logo" />
+          <span>Kay’s Lumière</span>
+        </a>
+        <button class="nav-close" type="button" data-nav-close aria-label="Close menu">
+          ×
+        </button>
+      </div>
+      <nav class="nav-drawer-links" aria-label="Mobile navigation">
+        <a href="about.html">About</a>
+        <a href="collections.html">Collections</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+        <a href="cart.html">Cart <span class="cart-count" data-cart-count>0</span></a>
+      </nav>
+      <div class="nav-drawer-cta">
+        <a class="btn btn-gold" href="shop.html">Shop Now</a>
+        <a class="btn btn-outline" href="cart.html">View Cart</a>
+      </div>
+    </aside>
+
+    <!-- Hero -->
+    <section class="page-hero">
+      <div class="container editorial-animate">
+        <span class="pill">Checkout</span>
+        <h1>Complete your purchase with confidence.</h1>
+        <p class="section-subtitle">
+          Secure checkout experience with concierge support. No payment integration in
+          this demo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Checkout Form + Summary -->
+    <section class="section fade-in">
+      <div class="container grid grid-2">
+        <form class="card" aria-label="Checkout form">
+          <h2 class="section-title">Delivery Details</h2>
+          <label for="full-name">Full Name</label>
+          <input class="field" id="full-name" type="text" required />
+          <label for="phone">Phone</label>
+          <input class="field" id="phone" type="tel" required />
+          <label for="address">Address</label>
+          <input class="field" id="address" type="text" required />
+          <label for="city">City</label>
+          <input class="field" id="city" type="text" required />
+          <label for="notes">Delivery Notes</label>
+          <textarea class="field" id="notes" rows="4"></textarea>
+          <button class="btn btn-gold" type="submit">Place Order</button>
+        </form>
+        <div class="summary">
+          <h2 class="section-title">Order Summary</h2>
+          <p>Subtotal: <strong data-cart-total>₦0</strong></p>
+          <p>Delivery: Complimentary insured delivery</p>
+          <p>Concierge: Priority order tracking</p>
+          <hr />
+          <p>Total: <strong data-cart-total>₦0</strong></p>
+          <div style="margin-top: 24px">
+            <p>
+              Need assistance? Reach our concierge on WhatsApp for payment and
+              scheduling support.
+            </p>
+            <a class="btn btn-outline" href="https://wa.me/2340000000000">WhatsApp Concierge</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="footer-logo">
+            <img src="assets/images/logo.jpg" alt="Kay’s Lumière logo" />
+            <span>Kay’s Lumière</span>
+          </div>
+          <p>Crafted jewelry for life’s finest moments.</p>
+        </div>
+        <div>
+          <h4>Maison</h4>
+          <a href="about.html">About Us</a><br />
+          <a href="collections.html">Collections</a>
+        </div>
+        <div>
+          <h4>Client Services</h4>
+          <a href="contact.html">Contact</a><br />
+          <a href="cart.html">Cart</a><br />
+          <a href="checkout.html">Checkout</a>
+        </div>
+        <div>
+          <h4>Follow</h4>
+          <a href="#">Instagram</a><br />
+          <a href="#">Pinterest</a><br />
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Kay’s Lumière. All rights reserved.</span>
+        <span>Luxury fine jewelry house of Nigeria.</span>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <div class="lightbox" data-lightbox aria-hidden="true" role="dialog" aria-label="Image preview">
+      <button class="lightbox-close" type="button" data-lightbox-close aria-label="Close image">
+        Close
+      </button>
+      <img src="" alt="" data-lightbox-image />
+    </div>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
