@@ -7,9 +7,10 @@
   --ivory: #f7f2ec;
   --champagne: #e7d8c8;
   --gold: #c7a978;
+  --gold-subtle: #E6D3A3;
   --ink: #1e1b18;
   --muted: #6f6660;
-  --border: #e7e0d8;
+  --border: #E6D3A3;
   --shadow: 0 24px 60px rgba(30, 27, 24, 0.12);
   --radius: 28px;
   --transition: 0.4s ease;
@@ -155,14 +156,11 @@ header.shrink {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
-  font-family: "Playfair Display", serif;
-  font-size: 1.25rem;
 }
 
 .logo img {
-  width: 46px;
-  height: 46px;
+  width: auto;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -304,7 +302,7 @@ header.shrink {
 
 .nav-drawer-links a:hover,
 .nav-drawer-links a:focus-visible {
-  color: var(--ink);
+  color: var(--gold-subtle);
 }
 
 .nav-drawer-cta {
@@ -761,7 +759,7 @@ body.nav-open .nav-toggle span:nth-child(3) {
 }
 
 .faq-toggle:hover {
-  color: var(--gold);
+  color: var(--gold-subtle);
 }
 
 .faq-icon {
